@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import Header from './components/header';
 
 export default function Home() {
   return (
@@ -13,11 +14,7 @@ export default function Home() {
 
       <main className="text-3xl">
         <div className="flex justify-center">
-          <h1
-            className={'text-3xl font-bold hover:text-red-500 cursor-default'}
-          >
-            Portofolio site
-          </h1>
+          <Header />
         </div>
         <div></div>
       </main>
