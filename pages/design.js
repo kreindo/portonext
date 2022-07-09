@@ -1,4 +1,5 @@
-import Head from 'next/head';import Header from './components/Header';
+import Head from 'next/head';
+import Header from './components/Header';
 
 export default function Design() {
   return (
@@ -10,7 +11,7 @@ export default function Design() {
       </Head>
       <main>
         <Header />
-        <div>this is design page</div>
+        <div className="flex justify-center">this is design page</div>
       </main>
     </div>
   );

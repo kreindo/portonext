@@ -1,4 +1,5 @@
-import Head from 'next/head';import Header from './components/Header';
+import Head from 'next/head';
+import Header from './components/Header';
 
 export default function Profile() {
   return (
@@ -10,7 +11,7 @@ export default function Profile() {
       </Head>
       <main>
         <Header />
-        <div>this is profile page</div>
+        <div className="flex justify-center">this is profile page</div>
       </main>
     </div>
   );
