@@ -1,4 +1,6 @@
-import Head from 'next/head';import Header from './components/Header';
+import Head from 'next/head';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 export default function Website() {
   return (
@@ -12,6 +14,7 @@ export default function Website() {
         <Header />
         <div className="flex justify-center">this is website page</div>
       </main>
+      <Footer />
     </div>
   );
 }

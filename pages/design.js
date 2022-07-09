@@ -1,5 +1,5 @@
-import Head from 'next/head';
-import Header from './components/Header';
+import Head from 'next/head';import Header from './components/Header';
+import Footer from './components/Footer';
 
 export default function Design() {
   return (
@@ -13,6 +13,7 @@ export default function Design() {
         <Header />
         <div className="flex justify-center">this is design page</div>
       </main>
+      <Footer />
     </div>
   );
 }
