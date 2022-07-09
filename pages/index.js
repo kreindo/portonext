@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Header from './components/Header';
+import Showcase from './components/Showcase';
 import Footer from './components/Footer';
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
 
       <main>
         <Header />
-        <div></div>
+        <Showcase />
       </main>
       <Footer />
     </div>
