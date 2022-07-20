@@ -4,7 +4,7 @@ import Showcase from '../components/Showcase';
 export default function Home() {
   return (
     <>
-      <Layout>
+      <Layout title="Home">
         {/* hero here */}
         <Showcase />
         {/* santris here */}

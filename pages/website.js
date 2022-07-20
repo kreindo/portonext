@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 export default function Website() {
   return (
     <>
-      <Layout>
+      <Layout title= 'Websites'>
         <div className="flex justify-center">this is website page</div>
       </Layout>
     </>

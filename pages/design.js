@@ -1,9 +1,8 @@
 import Layout from '../components/Layout';
-
 export default function Design() {
   return (
     <>
-      <Layout>
+      <Layout title="Designs">
         <div className="flex justify-center">this is design page</div>
       </Layout>
     </>
