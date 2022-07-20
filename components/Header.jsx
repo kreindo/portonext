@@ -1,40 +1,20 @@
-import Image from 'next/image';
-import { useState, useEffect } from 'react';
-import Logo from '../../public/assets/images/logo1.png';
-import Link from 'next/link';
+import Image from 'next/image';import Link from 'next/link';
+import Logo from '../public/assets/images/logo1.png';
 
 const Header = () => {
-  // const [menu, setMenu] = useState('menu');
-  const menus = ['design', 'website', 'profile'];
-  const handleClick = () => {
-    console.log('clicked!');
-  };
-  // useEffect(() => setMenu(menu), []);
-
   return (
-    <div className="px-14 py-14 shadow-xl">
+    <div className="py-5 md:px-14 md:py-14 shadow-xl">
       <div className="flex flex-1 justify-between mx-16">
         <Link href="/">
           <Image
             src={Logo}
             alt="Logo"
-            className="hover:cursor-pointer"
-            onClick={handleClick}
-            z
+            className="hover:cursor-pointer w-16 md:w-32 lg:w-48"
           />
         </Link>
-        <div className="text-4xl font-normal">
+        <div className="hidden md:block xl:text-4xl font-normal">
           <ul className="flex">
-            {menus.map((menu) => {
-              return (
-                <li key={menu} className="mx-10">
-                  <Link href={`/${menu}`}>
-                    <a>{menu}</a>
-                  </Link>
-                </li>
-              );
-            })}
-            {/* <li className="mx-10">
+            <li className="mx-10">
               <Link href="/design">
                 <a>Design</a>
               </Link>
@@ -48,7 +28,7 @@ const Header = () => {
               <Link href="/profile">
                 <a>Profil Santri</a>
               </Link>
-            </li> */}
+            </li>
           </ul>
           {/* {menus.map((menu) => {
             return (

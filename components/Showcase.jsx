@@ -1,15 +1,15 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import { useState } from 'react';
 
 const Showcase = () => {
-  const [title, setTitle] = use
+  const [title, setTitle] = useState();
 
   return (
     <div className="flex justify-center">
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-6xl font-bold text-biru-pondok my-16">Design</h1>
         <div className="container">
-          <div className=" grid grid-cols-3 gap-10">
+          <div className=" grid grid-cols-2 md:grid-cols-3 gap-10">
             <Image
               src={'https://picsum.photos/seed/asd/400'}
               width={400}

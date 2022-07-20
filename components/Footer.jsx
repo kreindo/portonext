@@ -1,7 +1,6 @@
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
-import Logo from '../../public/assets/images/logo1.png';
 import Link from 'next/link';
+import Logo from '../public/assets/images/logo1.png';
 
 const Footer = () => {
   const handleClick = () => {
