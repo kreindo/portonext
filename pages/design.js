@@ -4,7 +4,7 @@ export default function Design() {
     <>
       <Layout title="Designs">
         <div className="flex justify-center my-8">
-          <h1>this is design page</h1>
+          <h1 className="text-5xl">this is design page</h1>
         </div>
       </Layout>
     </>

@@ -8,7 +8,7 @@ export default function Santri() {
     <>
       <Layout>
         <div className="text-4xl flex flex-1 justify-center my-8">
-          <h1>This is {id} page</h1>
+          <h1 className="text-5xl">This is {id} page</h1>
         </div>
       </Layout>
     </>
