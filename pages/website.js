@@ -4,8 +4,8 @@ export default function Website() {
   return (
     <>
       <Layout title="Websites">
-        <div className="flex justify-center mt-8">
-          <h2>this is website page</h2>
+        <div className="flex justify-center my-8">
+          <h1>this is website page</h1>
         </div>
       </Layout>
     </>

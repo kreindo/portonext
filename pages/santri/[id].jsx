@@ -1,5 +1,4 @@
-import { useRouter } from 'next/router';
-import Layout from '../../components/Layout';
+import { useRouter } from 'next/router';import Layout from '../../components/Layout';
 
 export default function Santri() {
   const router = useRouter();
@@ -8,8 +7,8 @@ export default function Santri() {
   return (
     <>
       <Layout>
-        <div className="text-4xl flex flex-1 justify-center mt-8">
-          <h2>This is {id} page</h2>
+        <div className="text-4xl flex flex-1 justify-center my-8">
+          <h1>This is {id} page</h1>
         </div>
       </Layout>
     </>
