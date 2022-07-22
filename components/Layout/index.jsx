@@ -1,4 +1,5 @@
-import Header from '../header';import Footer from '../Footer';
+import Header from '../Header';
+import Footer from '../Footer';
 import Head from 'next/head';
 
 export const Layout = (props) => {
