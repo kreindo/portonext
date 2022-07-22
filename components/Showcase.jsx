@@ -1,4 +1,5 @@
-import Image from 'next/image';{
+import Image from 'next/image';
+{
   ('');
 }
 
@@ -40,7 +41,7 @@ const Showcase = (props) => {
               height={400}
               alt="2"
             />
-            {/* <Image
+            <Image
               src={'https://picsum.photos/seed/asg/400'}
               width={400}
               height={400}
@@ -81,7 +82,7 @@ const Showcase = (props) => {
               width={400}
               height={400}
               alt=""
-            /> */}
+            />
           </div>
         </div>
       </div>
