@@ -1,5 +1,8 @@
-import { Swiper, SwiperSlide } from 'swiper/react';import { EffectSlide, Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCards, Autoplay, Navigation } from 'swiper';
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/effect-cards';
 // import 'swiper/css/effect-slide';
 import Image from 'next/image';
 import '../../styles/Hero.module.css';
@@ -41,13 +44,17 @@ const Hero = () => {
           </p>
         </div>
         <Swiper
-          effect={'slide'}
+          effect={'cards'}
           grabCursor={true}
-          modules={[Autoplay]}
+          modules={[EffectCards, Autoplay, Navigation]}
           autoplay={{
             pauseOnMouseEnter: true,
             delay: 1000,
             disableOnInteraction: false,
+          }}
+          navigation={{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
           }}
           className="w-60 h-96"
         >
@@ -83,10 +90,8 @@ const Hero = () => {
               alt="4"
             />
           </SwiperSlide>
-          <div>
-            <button>right</button>
-            <button>left</button>
-          </div>
+          <button className="swiper-button-next"></button>
+          <button className="swiper-button-prev"></button>
         </Swiper>
       </div>
     </>
