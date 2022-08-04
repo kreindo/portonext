@@ -1,7 +1,6 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCards, Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';import { EffectSlide, Autoplay } from 'swiper';
 import 'swiper/css';
-import 'swiper/css/effect-cards';
+// import 'swiper/css/effect-slide';
 import Image from 'next/image';
 import '../../styles/Hero.module.css';
 
@@ -9,12 +8,22 @@ const Hero = () => {
   return (
     <>
       <div className="bg-biru-terang-pondok text-white p-20 flex select-none">
-        {/* <div className="bg-[url('../../public/assets/images/Ellipse 12.png')]"></div> */}
         <div className="relative">
           <Image
             src={'/assets/images/Ellipse.png'}
-            width={170}
-            height={170}
+            layout="fill"
+            alt="ellipse"
+            className="absolute hidden pointer-events-none"
+          />
+          <Image
+            src={'/assets/images/Intersect.png'}
+            layout="fill"
+            alt="ellipse"
+            className="absolute hidden pointer-events-none"
+          />
+          <Image
+            src={'/assets/images/Intersect2.png'}
+            layout="fill"
             alt="ellipse"
             className="absolute hidden pointer-events-none"
           />
@@ -32,9 +41,9 @@ const Hero = () => {
           </p>
         </div>
         <Swiper
-          effect={'cards'}
+          effect={'slide'}
           grabCursor={true}
-          modules={[EffectCards, Autoplay]}
+          modules={[Autoplay]}
           autoplay={{
             pauseOnMouseEnter: true,
             delay: 1000,
@@ -42,18 +51,42 @@ const Hero = () => {
           }}
           className="w-60 h-96"
         >
-          <SwiperSlide className="bg-red-200 flex justify-center items-center rounded-3xl">
-            img 1
+          <SwiperSlide className="bg-biru-pondok flex justify-center items-center rounded-3xl">
+            <Image
+              src={'https://picsum.photos/seed/asd/400'}
+              layout="fill"
+              className="rounded-3xl"
+              alt="1"
+            />
           </SwiperSlide>
-          <SwiperSlide className="bg-red-400 flex justify-center items-center rounded-3xl">
-            img 2
+          <SwiperSlide className="bg-biru-pondok flex justify-center items-center rounded-3xl">
+            <Image
+              src={'https://picsum.photos/seed/asf/400'}
+              layout="fill"
+              className="rounded-3xl"
+              alt="2"
+            />
           </SwiperSlide>
-          <SwiperSlide className="bg-red-600 flex justify-center items-center rounded-3xl">
-            img 3
+          <SwiperSlide className="bg-biru-pondok flex justify-center items-center rounded-3xl">
+            <Image
+              src={'https://picsum.photos/seed/asc/400'}
+              layout="fill"
+              className="rounded-3xl"
+              alt="3"
+            />
           </SwiperSlide>
-          <SwiperSlide className="bg-red-800 flex justify-center items-center rounded-3xl">
-            img 4
+          <SwiperSlide className="bg-biru-pondok flex justify-center items-center rounded-3xl">
+            <Image
+              src={'https://picsum.photos/seed/ase/400'}
+              layout="fill"
+              className="rounded-3xl"
+              alt="4"
+            />
           </SwiperSlide>
+          <div>
+            <button>right</button>
+            <button>left</button>
+          </div>
         </Swiper>
       </div>
     </>
