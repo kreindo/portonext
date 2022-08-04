@@ -7,7 +7,8 @@ export default function Home() {
     <>
       <Layout title="Home">
         <Hero />
-        <Showcase />
+        <Showcase title='Design'/>
+        <Showcase title='Web Dev'/>
         {/* santris here */}
       </Layout>
     </>
