@@ -1,10 +1,11 @@
-import Image from 'next/image';import Link from 'next/link';
+import Image from 'next/image';
+import Link from 'next/link';
 import Logo from '../public/assets/images/logo1.png';
 
 const Header = () => {
   return (
-    <div className="py-5 md:px-14 md:py-14 shadow-xl">
-      <div className="flex flex-1 justify-between mx-16">
+    <div className="py-5 md:px-14 md:py-14 shadow-lg">
+      <div className="flex flex-1 justify-between ">
         <Link href="/">
           <Image
             src={Logo}
@@ -12,7 +13,7 @@ const Header = () => {
             className="hover:cursor-pointer w-16 md:w-32 lg:w-48"
           />
         </Link>
-        <div className="hidden md:block xl:text-4xl font-normal">
+        <div className="hidden md:block xl:text-[36px] font-normal">
           <ul className="flex">
             <li className="mx-10">
               <Link href="/design">

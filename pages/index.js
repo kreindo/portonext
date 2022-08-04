@@ -1,11 +1,12 @@
 import Layout from '../components/Layout';
 import Showcase from '../components/Showcase';
+import Hero from './components/Hero';
 
 export default function Home() {
   return (
     <>
       <Layout title="Home">
-        {/* hero here */}
+        <Hero />
         <Showcase />
         {/* santris here */}
       </Layout>
