@@ -1,4 +1,5 @@
 import Layout from '../components/Layout';
+import Showcase from '../components/Showcase';
 export default function Website() {
   return (
     <>
@@ -7,6 +8,8 @@ export default function Website() {
           <h1 className="text-5xl">this is website page</h1>
         </div>
       </Layout>
+
+      <Showcase title='Web Dev'/>
     </>
   );
 }
