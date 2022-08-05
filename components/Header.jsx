@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from 'next/image';import Link from 'next/link';
 import Logo from '../public/assets/images/logo1.png';
 
 const Header = () => {
@@ -14,7 +13,7 @@ const Header = () => {
           />
         </Link>
         <div className="hidden md:block xl:text-[36px] font-normal">
-          <ul className="flex">
+          <ul className="flex text-[#465C60]">
             <li className="mx-10">
               <Link href="/design">
                 <a>Design</a>
