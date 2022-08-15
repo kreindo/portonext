@@ -1,10 +1,11 @@
-import { Swiper, SwiperSlide } from 'swiper/react';import { EffectCards, Autoplay, Navigation } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCards, Autoplay, Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-cards';
 // import 'swiper/css/effect-slide';
 import Image from 'next/image';
-import '../../styles/Hero.module.css';
+import '../styles/Hero.module.css';
 
 const Hero = () => {
   return (

@@ -7,7 +7,7 @@ export default function Design() {
           <h1 className="text-5xl">this is design page</h1>
         </div>
 
-        <Showcase title="Design" />
+        <Showcase title="Design" disabled/>
       </Layout>
     </>
   );

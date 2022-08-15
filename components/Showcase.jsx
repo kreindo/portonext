@@ -1,9 +1,11 @@
-import Image from 'next/image';{
+import Image from 'next/image';
+import Link from 'next/link';
+{
   ('');
 }
 
 const Showcase = (props) => {
-  const { fetchedDatas, title } = props;
+  const { fetchedDatas, title, link, disabled } = props;
   const images = []; // i want the url to be pushed here, and then displayed on the grid showcase
   console.log(fetchedDatas);
 
@@ -23,9 +25,6 @@ const Showcase = (props) => {
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-6xl font-bold text-biru-pondok my-16">{title}</h1>
         <div className="container">
-          <div className="flex flex-1 justify-center">
-            <button className="rounded-full mx-1 my-1">Dummy Button</button>
-          </div>
           <div className=" grid grid-cols-2 md:grid-cols-3 gap-10">
             <Image
               // src={images[0], ...images}
@@ -83,10 +82,19 @@ const Showcase = (props) => {
               alt=""
             />
           </div>
+          <div className="mt-[90px] flex flex-1 justify-center">
+            <Link href={`/${link}`}>
+              {!disabled ? (
+                <button className=" text-biru-terang-pondok py-2 px-[345px] hover:bg-gray-200 border-biru-terang-pondok border-solid border-2 rounded-none mx-5 my-5">
+                  Lihat Semua
+                </button>
+              ) : (
+                ''
+              )}
+            </Link>
+          </div>
         </div>
       </div>
-      <div></div>
-      <div></div>
     </div>
   );
 };
