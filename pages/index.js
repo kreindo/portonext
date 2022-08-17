@@ -1,6 +1,6 @@
 import Layout from '../components/Layout';
 import Showcase from '../components/Showcase';
-import Hero from '../components/Hero';
+import Hero from '../components/Hero/Hero';
 import Profile from '../components/Profile/Profile';
 
 export default function Home() {
