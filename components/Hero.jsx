@@ -1,9 +1,3 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCards, Autoplay, Navigation } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/effect-cards';
-// import 'swiper/css/effect-slide';
 import Image from 'next/image';
 import '../styles/Hero.module.css';
 
@@ -17,21 +11,21 @@ const Hero = () => {
             width={170}
             height={170}
             alt="ellipse"
-            className="absolute hidden pointer-events-none"
+            className="absolute top-5 pointer-events-none"
           />
           <Image
             src={'/assets/images/Intersect.png'}
             width={384}
             height={263}
             alt="ellipse"
-            className="absolute hidden pointer-events-none"
+            className="absolute pointer-events-none"
           />
           <Image
             src={'/assets/images/Intersect2.png'}
             width={493}
             height={329}
             alt="ellipse"
-            className="absolute hidden pointer-events-none"
+            className="absolute pointer-events-none"
           />
         </div>
         <div className="mt-10 z-0">
@@ -46,7 +40,7 @@ const Hero = () => {
             Dari Santri Pondok Informatika
           </p>
         </div>
-        <Swiper
+        {/* <Swiper
           effect={'cards'}
           grabCursor={true}
           modules={[EffectCards, Autoplay, Navigation]}
@@ -55,7 +49,7 @@ const Hero = () => {
           }}
           autoplay={{
             pauseOnMouseEnter: true,
-            delay: 1000,
+            delay: 10000,
             disableOnInteraction: false,
           }}
           navigation={{
@@ -64,7 +58,7 @@ const Hero = () => {
           }}
           className="w-60 h-96"
         >
-          <SwiperSlide className="bg-biru-pondok flex justify-center items-center rounded-3xl">
+          <SwiperSlide className="translate-x-14 bg-biru-pondok flex justify-center items-center rounded-3xl">
             <Image
               src={'https://picsum.photos/seed/fork/400'}
               layout="fill"
@@ -72,11 +66,11 @@ const Hero = () => {
               alt="1"
             />
           </SwiperSlide>
-          <SwiperSlide className="bg-biru-pondok flex justify-center items-center rounded-3xl">
+          <SwiperSlide className="translate-x-10 bg-biru-pondok flex justify-center items-center rounded-3xl">
             <Image
               src={'https://picsum.photos/seed/coding/400'}
               layout="fill"
-              className="rounded-3xl"
+              className="rounded-3xl "
               alt="2"
             />
           </SwiperSlide>
@@ -98,7 +92,7 @@ const Hero = () => {
           </SwiperSlide>
           <button className="swiper-button-next"></button>
           <button className="swiper-button-prev"></button>
-        </Swiper>
+        </Swiper> */}
       </div>
     </>
   );
